@@ -1,4 +1,19 @@
 Yourdoor::Application.routes.draw do
+
+  get "app/index"
+
+  devise_for :users
+
+  root to: 'home#index'
+  
+  match "/validate" => "home#validate"
+  
+  #resources :home do
+   # member do
+   #   post 'validate'
+   # end
+  #end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

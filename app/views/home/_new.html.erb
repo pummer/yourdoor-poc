@@ -1,0 +1,11 @@
+  <div id="applyNow">
+  <a href="#" id="applyNowButton" class="btn btn-large btn-primary" >Apply Now</a>
+  </div>
+  
+  <div id="checkEmail" style="display:none">
+  	<%= form_tag("/validate") do %>
+  	<%= label_tag(:email, "Email Address") %>
+  	<%= email_field_tag(:email,nil, class: "inputable")%>
+  	<%= submit_tag("Submit") %>
+  	<% end %>
+  </div>

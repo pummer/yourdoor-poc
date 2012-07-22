@@ -1,0 +1,14 @@
+<% provide(:title, 'Home') %>
+<div class="center hero-unit">
+  <h1>YourDoor</h1>
+<br/><br/>
+  <% if user_signed_in? %>
+  
+  		<%= render 'returning' %>
+  
+  <% else %>
+  
+  		<%= render 'new' %>
+  		
+  <% end %>
+</div>
